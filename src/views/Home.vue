@@ -15,6 +15,7 @@
           </div>
         </AccordionText>
       </p>
+      <router-link to="/reserve" class="btn-circle-flat">予約する</router-link> 
   </div>
 </template>
 
@@ -45,6 +46,22 @@ export default {
 <style lang="scss">
 .introduce{
   background-color: greenyellow
+}
+.btn-circle-flat {
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+.btn-circle-flat:hover {
+  background: #668ad8;
 }
 
 </style>
