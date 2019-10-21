@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <router-link to="/">Home</router-link> | 
+      <router-link to="/reserve">予約フォーム</router-link> | 
+      <router-link to="/100">100へのリンク</router-link>
+    </div>
+    <router-view/>
+    <AboutUs/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AboutUs from './components/AboutUs.vue'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  components:{
+    AboutUs
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    text-align: center;
+    font-size: 12px;
+  }
 </style>
